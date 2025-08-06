@@ -1,0 +1,13 @@
+class Solution {
+    public int findNumbers(int[] nums) {
+        int count=0;//intial
+        for(int number:nums){
+            int digits=(int)Math.log10(number)+1;//digits number has
+            if(digits%2==0){//check even
+                count++; //update 
+            }
+        }
+        return count;
+        
+    }
+}

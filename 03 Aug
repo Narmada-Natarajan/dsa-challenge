@@ -1,0 +1,29 @@
+import java.util.*;
+ 
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+ 
+        int n = sc.nextInt(); // total participants ->8
+        int k = sc.nextInt(); // kth participant    ->5
+ 
+        int kScore = 0; // kth pos if k=5->in score ind 5 place has 7 then k score is 7
+        int cnt = 0;//initial
+ 
+        for(int i = 1; i <= n; i++){
+            int score = sc.nextInt(); //take n scores //10 9 8 7 7 7 5 5
+ 
+            if(i == k){
+                kScore = score; //kth score
+            }
+ 
+            // condition if scores 10,9,8,7,7,7>=7 the inc cnt , but 5<7 then skip
+            if(score > 0 && score >= kScore){//next round
+                cnt++; // count=6
+            }
+        }
+        System.out.println(cnt);//6
+    }
+}
+ 
+ 

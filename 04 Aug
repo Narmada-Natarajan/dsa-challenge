@@ -1,0 +1,10 @@
+s=input().lower()
+ 
+vowels="aoyeui"
+output=""
+ 
+for ch in s:
+    if ch not in vowels:
+        output=output+"."+ch
+        
+print(output)
