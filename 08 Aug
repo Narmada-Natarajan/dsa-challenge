@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main3{
+
+    public static void main (String args[]){
+
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine().toLowerCase();//input lowercase 
+
+        Set<Character>Dc=new HashSet<>(); //distinct char
+
+
+
+        for(int i=0;i<s.length();i++){
+            Dc.add(s.charAt(i));
+        }
+        if(Dc.size()%2==0){//even->female 
+            System.out.println("CHAT WITH HER!");
+        }
+        else{//odd->male
+            System.out.println("IGNORE HIM!");
+        }
+
+    }
+
+}
