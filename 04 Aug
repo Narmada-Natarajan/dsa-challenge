@@ -1,3 +1,5 @@
+#CODEFORCES PROBLEM -> STRING TASK 
+
 s=input().lower()
  
 vowels="aoyeui"

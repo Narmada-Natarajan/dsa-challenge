@@ -1,8 +1,12 @@
+//LEETCODE PROBLEM ->FIND NUMBERS WITH EVEN NUMBER OF DIGITS
+
 class Solution {
     public int findNumbers(int[] nums) {
-        int count=0;//intial
+        int count=0;
+
         for(int number:nums){
             int digits=(int)Math.log10(number)+1;//digits number has
+
             if(digits%2==0){//check even
                 count++; //update 
             }
