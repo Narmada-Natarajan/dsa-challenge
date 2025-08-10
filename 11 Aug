@@ -1,0 +1,25 @@
+//CODEFORCES PROBLEM -> BIT++
+
+import java.util.*;
+
+public class Main{
+    public static void main (String args[]){
+
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();//no of statements in programme 
+        sc.nextLine();
+
+        int X=0; //initial
+
+        for(int i=0;i<n;i++){
+            String s=sc.nextLine(); //statements X++,X--,++X,--X
+            if(s.contains("++")){
+                X++;
+            }
+            else if(s.contains("--")){
+                X--;
+            }
+        }
+        System.out.println(X);
+    }
+}
