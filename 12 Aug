@@ -2,12 +2,12 @@
 
 import java.util.*;
 
-public class Main12{
+public class Main{
     public static void main (String args[]){
 
         Scanner sc=new Scanner(System.in);
-        Long m=sc.nextLong();
-        Long n=sc.nextLong();
+        int m=sc.nextInt();
+        int n=sc.nextInt();
 
         System.out.println((m * n)/2);//max dominoes in two sq
     }
