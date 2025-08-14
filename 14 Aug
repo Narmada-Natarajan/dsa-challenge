@@ -1,0 +1,31 @@
+//CODEFORCES PROBLEM -> TWINS
+
+import java.util.*;
+public class Main14{
+
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();  //no. of coins n=3
+        int[]coins=new int[n]; //coins [2,1,2]
+
+        int sum=0;
+        for(int i=0;i<n;i++){
+            coins[i]=sc.nextInt();
+            sum+=coins[i]; 
+        }
+
+        Arrays.sort(coins); //[1,2,2]
+        int takensum=0; //greedy pick ->end [i=2]
+        int cnt=0; //cnt1
+
+        for(int i=n-1;i>=0;i--){
+            takensum+=coins[i];
+            cnt++;
+            if(takensum>sum-takensum){ //[2>5-2] No , continue..
+                break;
+            }
+        }
+        System.out.println(cnt);
+
+    }
+}
