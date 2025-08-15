@@ -1,0 +1,19 @@
+// CODEFORCES PROBLEM -> QUEUE IN THE SCHOOL
+
+import java.util.*;
+public class Main{
+    public static void main (String args[]){
+
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int t=sc.nextInt(); 
+        sc.nextLine();
+        String a=sc.nextLine();
+        
+        for (int time = 0; time < t; time++) {
+            a = a.replace("BG", "GB");
+        }
+        System.out.println(a);
+    }
+}
+
