@@ -1,0 +1,13 @@
+//CODEFORCES PROBLEM -> ELEPHANT
+
+import java.util.*;
+public class Main16{
+    public static void main (String args[]){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt(); // frnd's house
+
+        int steps=(x+4)/5; //min step ceil div
+        System.out.println(steps);
+    
+    }      
+}
