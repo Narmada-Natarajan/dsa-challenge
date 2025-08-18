@@ -1,0 +1,24 @@
+// CODEFORCES PROBLEM -> WORD
+
+import java.util.*;
+public class Main18{
+    public static void main (String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int u=0,l=0;
+
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if(Character.isUpperCase(c)){
+                u++;
+            }else if(Character.isLowerCase(c)){
+            l++;
+        }
+        }
+        if(u>l){
+            System.out.println(s.toUpperCase());
+        }else{
+        System.out.println(s.toLowerCase());
+        }
+    }
+}
