@@ -1,0 +1,22 @@
+//CODEFORCES PROBLEM-> MAGNETS
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();//no of magnets
+        String before=sc.next();
+        int groups=1;
+
+        for(int i=1;i<n;i++){
+            String after=sc.next();
+            if(!after.equals(before)){
+                groups++;
+            }
+            before=after;
+
+        }
+        System.out.println(groups);
+    }
+}
+
