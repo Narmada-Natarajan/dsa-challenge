@@ -1,4 +1,4 @@
-//CODEFORCES PROBLEM ->cAPS UNLOCK
+#CODEFORCES PROBLEM ->cAPS UNLOCK
 
 s = input().strip()
 if s.isupper():
