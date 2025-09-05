@@ -1,0 +1,9 @@
+//CODEFORCES PROBLEM ->cAPS UNLOCK
+
+s = input().strip()
+if s.isupper():
+    print(s.lower())
+elif s[0].islower() and s[1:].upper() == s[1:]:
+    print(s.capitalize())
+else:
+    print(s)
